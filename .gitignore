@@ -1,4 +1,4 @@
 .DS_Store
-.idea
-lib
+.idea/
+lib/
 Fourmi-Project.iml
