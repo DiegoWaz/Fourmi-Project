@@ -10,7 +10,7 @@ public class Cellule {
     /**pheromones*/
     private double pheromone;
     /**nourriture*/
-    private double nourriture;
+    // private double nourriture;
     /**cellule d'un nid*/
     private boolean nid;
     /**presence d'au moins une fourmis*/
@@ -18,9 +18,6 @@ public class Cellule {
 
     /** reference a la grille des cellule*/
     Cellule [][]grille;
-
-    /**a change recemment*/
-    boolean hasJustChanged;
 
     /** constructeur par defaut, inutilise*/
     public Cellule(){}
