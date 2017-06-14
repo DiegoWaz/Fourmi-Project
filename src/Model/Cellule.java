@@ -1,8 +1,9 @@
 package Model;
 
 /**
- * Created by diegowaziri on 26/05/2017.
+ * cette classe représente une cellule de la simulation de fourmis
  */
+
 public class Cellule {
     /**coordonnee de la cellule dans la grille*/
     private int x,y;
@@ -14,6 +15,15 @@ public class Cellule {
     private boolean nid;
     /**presence d'au moins une fourmis*/
     private boolean fourmis;
+
+    /** reference a la grille des cellule*/
+    Cellule [][]grille;
+
+    /**a change recemment*/
+    boolean hasJustChanged;
+
+    /** constructeur par defaut, inutilise*/
+    public Cellule(){}
 
     public Cellule(int x, int y, double pheromone, double nourriture, boolean nid, boolean fourmis) {
         this.x = x;

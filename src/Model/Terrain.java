@@ -1,8 +1,12 @@
 package Model;
 import java.util.Random;
 
+/** terrain des cellules de la simulation de fourmis */
+
 public class Terrain {
 
+    /** grille a l'instant t*/
+    public Cellule [][] grille;
     /** taille de la grille*/
     private int taille;
     /** nombre de fourmis */
@@ -23,32 +27,16 @@ public class Terrain {
         return taille;
     }
 
-    public void setTaille(int taille) {
-        this.taille = taille;
-    }
-
     public int getNbFourmis() {
         return nbFourmis;
-    }
-
-    public void setNbFourmis(int nbFourmis) {
-        this.nbFourmis = nbFourmis;
     }
 
     public int getxNid() {
         return xNid;
     }
 
-    public void setxNid(int xNid) {
-        this.xNid = xNid;
-    }
-
     public int getyNid() {
         return yNid;
-    }
-
-    public void setyNid(int yNid) {
-        this.yNid = yNid;
     }
 }
 
