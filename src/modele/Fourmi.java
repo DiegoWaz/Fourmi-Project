@@ -30,7 +30,9 @@ public class Fourmi {
 	private Random hasard;
 
 
-	public Fourmi(){}
+	public Fourmi(){
+
+    }
 
 	/**construit une fourmi
 	 * @param _x coordonee x initiale de la fourmi

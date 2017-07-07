@@ -6,7 +6,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-import appli.Simulation;
+import controlleur.Simulation;
 
 import javax.swing.AbstractAction;
 

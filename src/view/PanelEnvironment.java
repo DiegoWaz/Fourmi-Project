@@ -48,7 +48,7 @@ public class PanelEnvironment extends JFrame implements ActionListener
 	{
 		terrain = _matrice;
 		taille = terrain.getTaille();
-		colTerrain = Color.gray;
+		colTerrain = Color.green;
 		init();
 		timer = new Timer(tempo, this);
 		timer.start();
@@ -62,7 +62,7 @@ public class PanelEnvironment extends JFrame implements ActionListener
 	{
 		setBounds(550, 400, 4 * espace + taille * espace, 6 * espace + taille * espace);
 		jpanel = new JPanel();
-		jpanel.setBackground(Color.gray);
+		jpanel.setBackground(Color.green);
 		setBackground(Color.black);
 		getContentPane().add(jpanel);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -115,13 +115,13 @@ public class PanelEnvironment extends JFrame implements ActionListener
 				}
 				
 				if(cell.isObstacle()){
-					g2d.setColor(Color.black);
+					g2d.setColor(Color.red);
 					g2d.fillRect((i+1)*espace, (j+1)*espace, espace, espace);
 				}
 				
 				if (cell.isFourmis()) // s'il y a une foumi dans la cellule
 				{
-					g2d.setColor(Color.red);
+					g2d.setColor(Color.black);
 					g2d.fillOval((i+1)*espace+1, (j+1)*espace+1, espace-2, espace-2);
 				}
 			}

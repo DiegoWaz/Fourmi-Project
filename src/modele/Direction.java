@@ -2,7 +2,14 @@ package modele;
 
 /**type enumere evolue codant les directions des 4 points cardinaux et des 4 points sous forme de vecteur*/
 public enum Direction {
-	NORD(0, 0, -1), NORD_EST(1, 1, -1), EST(2,1,0), SUD_EST(3,1,1), SUD(4,0,1), SUD_OUEST(5,-1,1), OUEST(6,-1,0), NORD_OUEST(7,-1,-1);
+	NORD(0, 0, -1),
+	NORD_EST(1, 1, -1),
+	EST(2,1,0),
+	SUD_EST(3,1,1),
+	SUD(4,0,1),
+	SUD_OUEST(5,-1,1),
+	OUEST(6,-1,0),
+	NORD_OUEST(7,-1,-1);
 	/**no d'indice de la direction*/
 	int no;
 	/**coordonnee x du vecteur de la direction*/
@@ -74,7 +81,4 @@ public enum Direction {
 		int i = (int)(Math.random()*tab.length);
 		return tab[i];
 	}
-	
 }
-
-

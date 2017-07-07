@@ -1,4 +1,4 @@
-package appli;
+package controlleur;
 
 import view.View;
 import modele.Terrain;
@@ -11,7 +11,7 @@ public class Simulation {
 	
 	public Simulation(View window){
 		int tailleTerrain = 50;
-		int nbFourmis = 5;
+		int nbFourmis = 300;
 		int tauxDeRaffraichissementEnMilliseconde = 10;
 		Terrain terrain = new Terrain(tailleTerrain, nbFourmis);
 		panelEnv = new PanelEnvironment(terrain, tauxDeRaffraichissementEnMilliseconde,window);

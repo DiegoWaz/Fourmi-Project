@@ -81,7 +81,10 @@ public class Cellule
 		if (pheromone!=0) 
 		{
 			pheromone = pheromone * (1d - Cellule.evaporation);
-			if (pheromone<=Cellule.pheroNulle) {pheromone = 0; 	hasJustChanged = true;}
+			if (pheromone<=Cellule.pheroNulle) {
+                pheromone = 0;
+                hasJustChanged = true;
+			}
 		}
 	}
 
@@ -195,5 +198,4 @@ public class Cellule
 	public void setOdeurNid(double odeurNid) {
 		this.odeurNid = odeurNid;
 	}
-
 }
